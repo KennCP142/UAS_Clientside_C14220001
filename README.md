@@ -1,4 +1,5 @@
 # Web Screenshots
+### WEB Deployment: https://uas-clientside-c14220001.vercel.app/
 
 ## Sign-in page
 ![alt text](public/Screenshots/signin_page.png)
