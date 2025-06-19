@@ -15,28 +15,22 @@
   ],
   "products": [
     {
-      "id": 1,
-      "nama_produk": "Laptop A",
+      "nama_produk": "Laptop Asus",
       "harga_satuan": 12000000,
-      "quantity": 5
+      "quantity": 6,
+      "id": 1
     },
     {
-      "id": 2,
-      "nama_produk": "Mouse B",
-      "harga_satuan": 150000,
-      "quantity": 20
+      "nama_produk": "Mouse Razer",
+      "harga_satuan": 1500000,
+      "quantity": 16,
+      "id": 2
     },
     {
-      "id": 3,
-      "nama_produk": "Keyboard C",
-      "harga_satuan": 300000,
-      "quantity": 10
-    },
-    {
-      "nama_produk": "awdasd",
-      "harga_satuan": 12000,
-      "quantity": 2,
-      "id": 4
+      "nama_produk": "Keyboard logitech",
+      "harga_satuan": 850000,
+      "quantity": 9,
+      "id": 3
     }
   ]
 }

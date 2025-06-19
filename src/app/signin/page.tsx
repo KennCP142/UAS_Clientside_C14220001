@@ -53,10 +53,10 @@ export default function SignIn() {
             </svg>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Welcome Back
+            SIGN IN
           </h2>
           <p className="text-gray-600">
-            Sign in to access your dashboard
+            access your dashboard
           </p>
         </div>
 
@@ -159,13 +159,6 @@ export default function SignIn() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Footer */}
-        <div className="text-center mt-6">
-          <p className="text-sm text-gray-500">
-            Secure authentication powered by Next.js
-          </p>
         </div>
       </div>
     </div>
