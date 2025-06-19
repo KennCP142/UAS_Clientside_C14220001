@@ -31,6 +31,12 @@
       "harga_satuan": 850000,
       "quantity": 9,
       "id": 3
+    },
+    {
+      "nama_produk": "New Product",
+      "harga_satuan": 122255,
+      "quantity": 5,
+      "id": 4
     }
   ]
 }
