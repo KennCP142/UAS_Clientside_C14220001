@@ -14,27 +14,44 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-blue-600 text-white shadow-lg">
+    <nav className="bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-xl border-b border-orange-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/dashboard" className="text-xl font-bold">
+          <div className="flex items-center space-x-4">
+            <div className="h-10 w-10 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
+              <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <Link href="/dashboard" className="text-xl font-bold hover:text-orange-100 transition-colors">
               Dashboard
             </Link>
           </div>
           
           <div className="flex items-center space-x-4">
-            <span className="text-sm">
-              Welcome, <span className="font-semibold">{user?.username}</span>
-            </span>
-            <span className="px-2 py-1 bg-blue-500 rounded-full text-xs uppercase">
-              {user?.role}
-            </span>
+            <div className="flex items-center space-x-3 bg-white bg-opacity-10 rounded-xl px-4 py-2">
+              <div className="h-8 w-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                <svg className="h-4 w-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <div className="text-right">
+                <p className="text-sm font-semibold text-white">
+                  {user?.username}
+                </p>
+                <p className="text-xs text-orange-100 uppercase tracking-wide">
+                  {user?.role}
+                </p>
+              </div>
+            </div>
             <button
               onClick={handleLogout}
-              className="bg-blue-700 hover:bg-blue-800 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              className="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center space-x-2 hover:shadow-lg"
             >
-              Logout
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+              <span>Logout</span>
             </button>
           </div>
         </div>
